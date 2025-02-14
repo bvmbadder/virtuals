@@ -10,6 +10,7 @@ import { main, moreWallets } from "../utils";
 import TabModal from "./TabModal";
 import back from "../assets/icon/back.png";
 import q from "../assets/icon/q.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -140,11 +141,11 @@ const Header = () => {
             className="xl:w-[100px] w-[40px] h-[20px] xl:h-[30px] object-contain mr-2 hidden lg:block"
           />
         </a>
-        <a href="/functionalities">
+        <Link to="/functionalities">
           <button className="text-foreground text-nowrap rounded-[100px] transition-opacity hover:opacity-80 bg-transparent text-white text-xs px-3 py-2 lg:px-3 lg:py-2">
             Functionalities
           </button>
-        </a>
+        </Link>
         <a href="#">
           <button className="text-foreground text-nowrap rounded-[100px] transition-opacity hover:opacity-80 bg-white/10 text-white text-xs px-3 py-2 lg:px-3 lg:py-2">
             Prototype
