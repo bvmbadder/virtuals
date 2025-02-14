@@ -126,6 +126,7 @@ const Functionalities = () => {
         <div className=" bg-bg bg-cover bg-no-repeat  flex flex-col min-h-screen">
           <Header />
           <div className="container mx-auto p-4 lg:p-6">
+            <div className="text-center">Functionalities</div>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 ">
               {items.map((item, index) => (
                 <div
